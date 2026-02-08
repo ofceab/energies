@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="r-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#1a2d4a"/>
+    </linearGradient>
+    <linearGradient id="r-tower" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#4a5568"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#r-bg)"/>
+  <rect x="200" y="200" width="80" height="400" rx="4" fill="url(#r-tower)" opacity="0.9"/>
+  <rect x="400" y="100" width="70" height="500" rx="4" fill="url(#r-tower)" opacity="0.85"/>
+  <rect x="550" y="250" width="65" height="350" rx="4" fill="url(#r-tower)" opacity="0.9"/>
+  <rect x="720" y="150" width="75" height="450" rx="4" fill="url(#r-tower)" opacity="0.85"/>
+  <rect x="900" y="280" width="70" height="320" rx="4" fill="url(#r-tower)" opacity="0.9"/>
+  <circle cx="400" cy="380" r="25" fill="#c9a227" opacity="0.4"/>
+  <circle cx="720" cy="320" r="20" fill="#c9a227" opacity="0.35"/>
+</svg>

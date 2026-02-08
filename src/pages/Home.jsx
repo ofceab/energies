@@ -24,6 +24,14 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="trust-bar">
+        <div className="container trust-bar__inner">
+          <span>Physical product brokerage</span>
+          <span>NCNDA &amp; confidential</span>
+          <span>International standards</span>
+        </div>
+      </div>
+
       <section className="section section-with-img">
         <div className="container section-with-img__inner">
           <div className="section-with-img__text">
@@ -51,6 +59,7 @@ export default function Home() {
                 <img src={images.refinery} alt="Refinery and petroleum processing" loading="lazy" />
               </div>
               <h3>EN590 10 ppm</h3>
+              <p className="card__spec">EN 590 • 10 ppm S • Euro 5</p>
               <p>Euro 5 specification diesel, aligned with international standards. Sourced and verified through our network of reputable suppliers.</p>
               <Link to="/products#en590">Details</Link>
             </div>
@@ -59,6 +68,7 @@ export default function Home() {
                 <img src={images.aviation} alt="Aviation fuel supply and operations" loading="lazy" />
               </div>
               <h3>Jet A1 Aviation Fuel</h3>
+              <p className="card__spec">DEF STAN 91-91 • ASTM D1655</p>
               <p>Aviation turbine fuel meeting DEF STAN 91-91 and ASTM D1655. Supplied for commercial and operational aviation needs.</p>
               <Link to="/products#jet-a1">Details</Link>
             </div>
@@ -67,6 +77,7 @@ export default function Home() {
                 <img src={images.marine} alt="Marine and fuel logistics" loading="lazy" />
               </div>
               <h3>Fuel Oil</h3>
+              <p className="card__spec">Residual &amp; distillate • Industrial &amp; marine</p>
               <p>Residual and distillate fuel oils for industrial and marine applications. Sourcing and verification in line with market requirements.</p>
               <Link to="/products#fuel-oil">Details</Link>
             </div>
@@ -178,6 +189,35 @@ export default function Home() {
         }
         .hero__trust span::before { content: '•'; margin-right: 0.5rem; color: var(--color-accent-light); }
         .hero__cta { margin-top: 0.5rem; }
+        .trust-bar {
+          background: var(--color-navy);
+          color: rgba(255,255,255,0.85);
+          font-size: 0.85rem;
+          padding: 0.75rem var(--section-padding-x);
+          border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        .trust-bar__inner {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 1.5rem 2.5rem;
+        }
+        .trust-bar span { position: relative; }
+        .trust-bar span:not(:last-child)::after {
+          content: '';
+          position: absolute;
+          right: -1.25rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          background: var(--color-accent-light);
+          border-radius: 50%;
+          opacity: 0.8;
+        }
+        @media (max-width: 600px) {
+          .trust-bar span:not(:last-child)::after { display: none; }
+        }
         .section__title { margin-bottom: 1rem; }
         .product-grid {
           display: grid;
@@ -217,6 +257,12 @@ export default function Home() {
         .card__img-wrap img { width: 100%; height: 100%; object-fit: cover; }
         .card--with-img h3, .card--with-img p, .card--with-img a { padding-left: 1.75rem; padding-right: 1.75rem; }
         .card--with-img h3 { padding-top: 1.25rem; }
+        .card__spec {
+          font-size: 0.8rem;
+          color: var(--color-accent-light);
+          margin: 0.25rem 0 0.5rem;
+          font-weight: 500;
+        }
         .card--with-img p { padding-bottom: 0.5rem; }
         .card--with-img a { display: inline-block; padding-bottom: 1.75rem; }
         .section-cta {

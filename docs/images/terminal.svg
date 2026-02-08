@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <defs>
+    <linearGradient id="t-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2d4a"/>
+      <stop offset="100%" style="stop-color:#0a1628"/>
+    </linearGradient>
+    <linearGradient id="t-tank" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#2d3748"/>
+      <stop offset="100%" style="stop-color:#4a5568"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#t-bg)"/>
+  <ellipse cx="300" cy="520" rx="120" ry="40" fill="url(#t-tank)" opacity="0.9"/>
+  <rect x="180" y="220" width="240" height="300" fill="url(#t-tank)" opacity="0.9"/>
+  <ellipse cx="600" cy="540" rx="130" ry="42" fill="url(#t-tank)" opacity="0.9"/>
+  <rect x="470" y="240" width="260" height="300" fill="url(#t-tank)" opacity="0.9"/>
+  <ellipse cx="900" cy="510" rx="115" ry="38" fill="url(#t-tank)" opacity="0.9"/>
+  <rect x="785" y="230" width="230" height="280" fill="url(#t-tank)" opacity="0.9"/>
+  <rect x="0" y="600" width="1200" height="200" fill="#0d1f33"/>
+  <path d="M0 600 Q300 560 600 600 Q900 640 1200 600 V800 H0 Z" fill="#0d1f33" opacity="0.8"/>
+  <circle cx="300" cy="350" r="15" fill="#c9a227" opacity="0.5"/>
+  <circle cx="600" cy="370" r="12" fill="#c9a227" opacity="0.45"/>
+</svg>

@@ -49,6 +49,9 @@ export default function Contact() {
                 <strong>Phone</strong><br />
                 Available upon request through secure channels.
               </p>
+              <p className="contact-lang">
+                Enquiries in English and French welcome.
+              </p>
               <div className="contact-notice">
                 <p>
                   All inquiries are handled with discretion and confidentiality. We do not
@@ -127,6 +130,12 @@ export default function Contact() {
         .contact-info h2,
         .contact-form-wrap h2 { margin-bottom: 1rem; }
         .contact-info p { margin: 0 0 1.25rem; }
+        .contact-lang {
+          margin: 0 0 1rem;
+          font-size: 0.9rem;
+          color: var(--color-accent);
+          font-weight: 500;
+        }
         .contact-notice {
           margin-top: 1.5rem;
           padding: 1rem;

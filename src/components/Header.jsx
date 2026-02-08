@@ -10,7 +10,6 @@ const navItems = [
   { path: '/about-us', label: 'About Us' },
   { path: '/partners-compliance', label: 'Partners & Compliance' },
   { path: '/insights', label: 'Insights' },
-  { path: '/contact', label: 'Contact' },
 ]
 
 export default function Header() {
@@ -48,6 +47,15 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li className="header__cta-wrap">
+              <Link
+                to="/contact"
+                className="header__cta"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
@@ -121,6 +129,21 @@ export default function Header() {
         .header__link--active {
           color: var(--color-accent-light);
         }
+        .header__cta-wrap { margin-left: 0.5rem; }
+        .header__cta {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          background: var(--color-accent);
+          color: var(--color-white) !important;
+          border: 1px solid var(--color-accent);
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+        .header__cta:hover {
+          background: var(--color-accent-light);
+          border-color: var(--color-accent-light);
+          color: var(--color-white) !important;
+        }
         @media (max-width: 900px) {
           .header__toggle { display: flex; }
           .header__nav {
@@ -141,6 +164,8 @@ export default function Header() {
             gap: 0;
           }
           .header__nav .header__link { display: block; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+          .header__cta-wrap { margin: 0.75rem 0 0; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.1); }
+          .header__cta { display: block; text-align: center; }
         }
       `}</style>
     </header>
