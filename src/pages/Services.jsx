@@ -1,7 +1,10 @@
+import { images } from '../assets/images'
+
 export default function Services() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.pipeline})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>Services</h1>
           <p>Structured support across the energy transaction lifecycle</p>

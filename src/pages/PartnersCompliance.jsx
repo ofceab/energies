@@ -1,7 +1,10 @@
+import { images } from '../assets/images'
+
 export default function PartnersCompliance() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.terminal})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>Partners & Compliance</h1>
           <p>Risk reduction and compliance-first culture</p>

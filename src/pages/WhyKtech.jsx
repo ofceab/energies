@@ -1,7 +1,10 @@
+import { images } from '../assets/images'
+
 export default function WhyKtech() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.handshake})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>Why KTECH</h1>
           <p>Trust, compliance, and professionalism as your intermediary</p>

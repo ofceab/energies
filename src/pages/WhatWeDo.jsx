@@ -1,17 +1,21 @@
+import { images } from '../assets/images'
+
 export default function WhatWeDo() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.refinery})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>What We Do</h1>
           <p>Strategic intermediary for physical petroleum and refined energy products</p>
         </div>
       </div>
 
-      <section className="section">
-        <div className="container" style={{ maxWidth: '800px' }}>
-          <h2>Our Role</h2>
-          <p className="lead">
+      <section className="section section-with-img">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__text">
+            <h2>Our Role</h2>
+            <p className="lead">
             KTECH operates as an international energy broker: we connect verified suppliers of
             physical petroleum and refined products with qualified buyers. We do not hold
             inventory; we facilitate secure, compliant transactions between parties who have
@@ -23,6 +27,10 @@ export default function WhatWeDo() {
             both sides while upholding international trading standards and NCNDA-based
             protocols where applicable.
           </p>
+          </div>
+          <div className="section-with-img__media">
+            <img src={images.handshake} alt="Professional partnership and trusted transactions" loading="lazy" />
+          </div>
         </div>
       </section>
 
@@ -42,8 +50,12 @@ export default function WhatWeDo() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container" style={{ maxWidth: '800px' }}>
+      <section className="section section-with-img section-with-img--reverse">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__media">
+            <img src={images.global} alt="Global energy markets and cross-border trade" loading="lazy" />
+          </div>
+          <div className="section-with-img__text">
           <h2>Markets and Products</h2>
           <p>
             We broker physical products including EN590 10 ppm diesel, Jet A1 aviation fuel,
@@ -56,6 +68,7 @@ export default function WhatWeDo() {
             verified supply, KTECH provides a professional, institutional interface for
             initiating and progressing transactions in a compliant and confidential manner.
           </p>
+          </div>
         </div>
       </section>
 

@@ -1,15 +1,19 @@
+import { images } from '../assets/images'
+
 export default function AboutUs() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.office})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>About Us</h1>
           <p>Company vision, leadership, and core values</p>
         </div>
       </div>
 
-      <section className="section">
-        <div className="container" style={{ maxWidth: '800px' }}>
+      <section className="section section-with-img">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__text">
           <h2>Company Vision</h2>
           <p className="lead">
             KTECH was established to provide a reliable, professional interface for
@@ -20,9 +24,13 @@ export default function AboutUs() {
           <p>
             We do not seek to be the largest or the loudest player in the market. We aim to
             be the one that counterparties rely on for discretion, accuracy, and adherence
-            to standards. That approach has guided our development and continues to define
+            to             standards. That approach has guided our development and continues to define
             how we operate.
           </p>
+          </div>
+          <div className="section-with-img__media">
+            <img src={images.global} alt="International energy trade" loading="lazy" />
+          </div>
         </div>
       </section>
 

@@ -1,15 +1,22 @@
+import { images } from '../assets/images'
+
 export default function Products() {
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.terminal})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>Products</h1>
           <p>Physical petroleum and refined energy products, sourced and verified to international standards</p>
         </div>
       </div>
 
-      <section className="section" id="en590">
-        <div className="container">
+      <section className="section section-with-img" id="en590">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__media">
+            <img src={images.refinery} alt="Refinery and diesel production" loading="lazy" />
+          </div>
+          <div className="section-with-img__text">
           <div className="product-block">
             <h2>EN590 10 ppm</h2>
             <p className="lead">
@@ -26,12 +33,17 @@ export default function Products() {
               and subject to standard confidentiality arrangements.
             </p>
           </div>
+          </div>
         </div>
       </section>
 
       <div className="divider" />
-      <section className="section" id="jet-a1">
-        <div className="container">
+      <section className="section section-with-img section-with-img--reverse" id="jet-a1">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__media">
+            <img src={images.aviation} alt="Aviation fuel supply" loading="lazy" />
+          </div>
+          <div className="section-with-img__text">
           <div className="product-block">
             <h2>Jet A1 Aviation Fuel</h2>
             <p className="lead">
@@ -46,12 +58,17 @@ export default function Products() {
               Inquiries are treated with full confidentiality.
             </p>
           </div>
+          </div>
         </div>
       </section>
 
       <div className="divider" />
-      <section className="section" id="fuel-oil">
-        <div className="container">
+      <section className="section section-with-img" id="fuel-oil">
+        <div className="container section-with-img__inner">
+          <div className="section-with-img__media">
+            <img src={images.marine} alt="Marine and industrial fuel oil" loading="lazy" />
+          </div>
+          <div className="section-with-img__text">
           <div className="product-block">
             <h2>Fuel Oil</h2>
             <p className="lead">
@@ -66,6 +83,7 @@ export default function Products() {
               grades, volumes, and terms are shared only with qualified parties under
               appropriate confidentiality arrangements.
             </p>
+          </div>
           </div>
         </div>
       </section>

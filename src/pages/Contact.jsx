@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { images } from '../assets/images'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -23,7 +24,8 @@ export default function Contact() {
 
   return (
     <>
-      <div className="page-head">
+      <div className="page-head page-head--with-bg" style={{ backgroundImage: `url(${images.office})` }}>
+        <div className="page-head__overlay" aria-hidden="true" />
         <div className="container">
           <h1>Contact</h1>
           <p>Secure, confidential communication for energy transaction inquiries</p>
