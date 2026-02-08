@@ -28,7 +28,7 @@ npm run preview # Serve `dist/` locally (e.g. http://localhost:4173)
 - **Vercel:** Add `vercel.json` with `"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]`
 - **GitHub Pages / Firebase / other:** Set 404 page to `index.html` or equivalent “single page app” rule.
 
-**Base path:** The app uses `base: './'` in Vite so it works from any subpath (e.g. `https://example.com/ktech/`). If you deploy to the root of a domain, you can set `base: '/'` in `vite.config.js`.
+**GitHub Pages:** Use `VITE_BASE_PATH=/your-repo-name/ npm run build` so images and assets load at `https://username.github.io/your-repo-name/`. Deploy the full `dist/` (including `images/`). See `vite.config.js` for the default repo name.
 
 ## Contact Form
 
