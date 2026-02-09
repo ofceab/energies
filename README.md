@@ -49,4 +49,4 @@ Until you replace `YOUR_FORM_ID`, the form will only show a success message loca
 
 ## Content
 
-All copy is written for KTECH — International Energy Brokerage: institutional tone, compliance-aware, no guarantees or pricing. Products: EN590 10 ppm, Jet A1, Fuel Oil. Contact: energies@konantech.net; Cocody, Abidjan, Côte d'Ivoire.
+All copy is written for KTECH Energies (as Division of KONAN Technologies): institutional tone, compliance-aware, no guarantees or pricing. Products: EN590 10 ppm, Jet A1, Fuel Oil. Contact: energies@konantech.net; Cocody, Abidjan, Côte d'Ivoire.

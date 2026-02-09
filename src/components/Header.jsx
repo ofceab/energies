@@ -20,8 +20,8 @@ export default function Header() {
     <header className="header">
       <div className="header__inner container">
         <Link to="/" className="header__brand">
-          <span className="header__brand-main">KTECH</span>
-          <span className="header__brand-tag">International Energy Brokerage</span>
+          <span className="header__brand-main">KTECH Energies</span>
+          <span className="header__brand-tag">as Division of KONAN Technologies</span>
         </Link>
         <button
           type="button"

@@ -7,10 +7,10 @@ export default function Home() {
       <section className="hero hero--with-bg" style={{ '--hero-bg': `url(${images.hero})` }}>
         <div className="hero__overlay" aria-hidden="true" />
         <div className="container hero__content">
-          <h1 className="hero__title">International Energy Brokerage</h1>
+          <h1 className="hero__title">KTECH Energies</h1>
           <p className="hero__subtitle">Reliable Access to Physical Petroleum Products Worldwide</p>
           <p className="hero__lead">
-            KTECH connects verified suppliers with qualified buyers, delivering secure, compliant,
+            KTECH Energies connects verified suppliers with qualified buyers, delivering secure, compliant,
             and efficient energy transactions across global markets.
           </p>
           <div className="hero__trust">
@@ -136,7 +136,7 @@ export default function Home() {
             For inquiries regarding supply, mandates, or secure energy transactions, contact us in
             confidence. All communications are handled with discretion.
           </p>
-          <Link to="/contact" className="btn btn--primary">Contact KTECH</Link>
+          <Link to="/contact" className="btn btn--primary">Contact KTECH Energies</Link>
         </div>
       </section>
 

@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div className="footer__brand">
-          <span className="footer__brand-main">KTECH</span>
-          <span className="footer__brand-tag">International Energy Brokerage</span>
+          <span className="footer__brand-main">KTECH Energies</span>
+          <span className="footer__brand-tag">as Division of KONAN Technologies</span>
           <p className="footer__mission">
             Facilitating trusted energy trade with transparency, professionalism, and speed.
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
       <div className="footer__bottom">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} KTECH — International Energy Brokerage. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} KTECH Energies — as Division of KONAN Technologies. All rights reserved.</p>
         </div>
       </div>
       <style>{`
