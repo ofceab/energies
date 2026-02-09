@@ -1,6 +1,6 @@
-# KTECH — International Energy Brokerage (Website)
+# KTECH Energies (Website)
 
-React-based multi-page website for KTECH International Energy Brokerage. Built for **static hosting**: no server required.
+React-based multi-page website for KTECH Energies — as Division of KONAN Technologies. Built for **static hosting** (Hostinger, Netlify, etc.).
 
 ## Stack
 
@@ -20,7 +20,7 @@ npm run preview # Serve `dist/` locally (e.g. http://localhost:4173)
 ## Deploy (Static Hosting)
 
 1. Run `npm run build`.
-2. Upload the contents of the **`dist/`** folder to your host.
+2. Upload **everything inside** the **`dist/`** folder to your web root (e.g. Hostinger `public_html`): `index.html`, `.htaccess`, `assets/`, `images/`, `favicon.svg`. Assets load from the root of your domain.
 
 **SPA fallback (required):** Because the app uses client-side routing, the server must serve `index.html` for all routes (so React Router can handle them). Configure as follows:
 
@@ -28,7 +28,7 @@ npm run preview # Serve `dist/` locally (e.g. http://localhost:4173)
 - **Vercel:** Add `vercel.json` with `"rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]`
 - **GitHub Pages / Firebase / other:** Set 404 page to `index.html` or equivalent “single page app” rule.
 
-**GitHub Pages:** Use `VITE_BASE_PATH=/your-repo-name/ npm run build` so images and assets load at `https://username.github.io/your-repo-name/`. Deploy the full `dist/` (including `images/`). See `vite.config.js` for the default repo name.
+**Hostinger:** The build includes a **`.htaccess`** so routes like `/contact` work and `/assets/`, `/images/` load correctly. Upload the full `dist/` to `public_html`. **GitHub Pages only:** use `VITE_BASE_PATH=/repo-name/ npm run build`.
 
 ## Contact Form
 
